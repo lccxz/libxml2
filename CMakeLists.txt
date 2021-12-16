@@ -21,7 +21,7 @@ include(CheckSymbolExists)
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs)
 
-option(BUILD_SHARED_LIBS "Build shared libraries" ON)
+option(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 set(LIBXML2_WITH_AUTOMATA ON)
 option(LIBXML2_WITH_C14N "Add the Canonicalization support" ON)
 option(LIBXML2_WITH_CATALOG "Add the Catalog support" ON)

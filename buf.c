@@ -865,7 +865,7 @@ xmlBufResize(xmlBufPtr buf, size_t size)
  *         and -1 in case of internal or API error.
  */
 int
-xmlBufAdd(xmlBufPtr buf, const xmlChar *str, unsigned long len) {
+xmlBufAdd(xmlBufPtr buf, const xmlChar *str, size_t len) {
     unsigned int needSize;
 
     if ((str == NULL) || (buf == NULL) || (buf->error))

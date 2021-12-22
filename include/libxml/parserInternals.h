@@ -328,7 +328,7 @@ XMLPUBFUN xmlParserCtxtPtr XMLCALL
 						 int options);
 XMLPUBFUN xmlParserCtxtPtr XMLCALL
 			xmlCreateMemoryParserCtxt(const char *buffer,
-						 int size);
+             unsigned long size);
 XMLPUBFUN xmlParserCtxtPtr XMLCALL
 			xmlCreateEntityParserCtxt(const xmlChar *URL,
 						 const xmlChar *ID,

@@ -14330,7 +14330,7 @@ xmlSAXUserParseFile(xmlSAXHandlerPtr sax, void *user_data,
  * Returns the new parser context or NULL
  */
 xmlParserCtxtPtr
-xmlCreateMemoryParserCtxt(const char *buffer, int size) {
+xmlCreateMemoryParserCtxt(const char *buffer, unsigned long size) {
     xmlParserCtxtPtr ctxt;
     xmlParserInputPtr input;
     xmlParserInputBufferPtr buf;
@@ -14388,7 +14388,7 @@ xmlCreateMemoryParserCtxt(const char *buffer, int size) {
 
 xmlDocPtr
 xmlSAXParseMemoryWithData(xmlSAXHandlerPtr sax, const char *buffer,
-	          int size, int recovery, void *data) {
+                          unsigned long size, int recovery, void *data) {
     xmlDocPtr ret;
     xmlParserCtxtPtr ctxt;
 
@@ -14439,7 +14439,7 @@ xmlSAXParseMemoryWithData(xmlSAXHandlerPtr sax, const char *buffer,
  */
 xmlDocPtr
 xmlSAXParseMemory(xmlSAXHandlerPtr sax, const char *buffer,
-	          int size, int recovery) {
+                  unsigned long size, int recovery) {
     return xmlSAXParseMemoryWithData(sax, buffer, size, recovery, NULL);
 }
 
@@ -14453,7 +14453,7 @@ xmlSAXParseMemory(xmlSAXHandlerPtr sax, const char *buffer,
  * Returns the resulting document tree
  */
 
-xmlDocPtr xmlParseMemory(const char *buffer, int size) {
+xmlDocPtr xmlParseMemory(const char *buffer, unsigned long size) {
    return(xmlSAXParseMemory(NULL, buffer, size, 0));
 }
 

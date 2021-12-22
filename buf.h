@@ -35,7 +35,7 @@ int xmlBufGrow(xmlBufPtr buf, int len);
 int xmlBufInflate(xmlBufPtr buf, size_t len);
 int xmlBufResize(xmlBufPtr buf, size_t len);
 
-int xmlBufAdd(xmlBufPtr buf, const xmlChar *str, int len);
+int xmlBufAdd(xmlBufPtr buf, const xmlChar *str, unsigned long len);
 int xmlBufAddHead(xmlBufPtr buf, const xmlChar *str, int len);
 int xmlBufCat(xmlBufPtr buf, const xmlChar *str);
 int xmlBufCCat(xmlBufPtr buf, const char *str);

@@ -846,7 +846,7 @@ XMLPUBFUN xmlDocPtr XMLCALL
 		xmlParseFile		(const char *filename);
 XMLPUBFUN xmlDocPtr XMLCALL
 		xmlParseMemory		(const char *buffer,
-					 int size);
+           unsigned long size);
 #endif /* LIBXML_SAX1_ENABLED */
 XMLPUBFUN int XMLCALL
 		xmlSubstituteEntitiesDefault(int val);
@@ -896,12 +896,12 @@ XMLPUBFUN xmlDocPtr XMLCALL
 XMLPUBFUN xmlDocPtr XMLCALL
 		xmlSAXParseMemory	(xmlSAXHandlerPtr sax,
 					 const char *buffer,
-					 int size,
+           unsigned long size,
 					 int recovery);
 XMLPUBFUN xmlDocPtr XMLCALL
 		xmlSAXParseMemoryWithData (xmlSAXHandlerPtr sax,
 					 const char *buffer,
-					 int size,
+           unsigned long size,
 					 int recovery,
 					 void *data);
 XMLPUBFUN xmlDocPtr XMLCALL

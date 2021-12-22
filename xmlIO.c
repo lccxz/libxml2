@@ -2951,7 +2951,7 @@ xmlParserInputBufferCreateFd(int fd, xmlCharEncoding enc) {
  * Returns the new parser input or NULL
  */
 xmlParserInputBufferPtr
-xmlParserInputBufferCreateMem(const char *mem, int size, xmlCharEncoding enc) {
+xmlParserInputBufferCreateMem(const char *mem, unsigned long size, xmlCharEncoding enc) {
     xmlParserInputBufferPtr ret;
     int errcode;
 
